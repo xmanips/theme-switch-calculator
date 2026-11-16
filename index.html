@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="Calc-container">
+    <div id="head">
+      <span id="t-calc">Calc</span>
+      <div id="head-left"><span>THEME</span>
+        <div id="container">
+          <div class="number">
+            <span class="num">1</span> <span class="num">2</span> <span class="num">3</span></div>
+          <div id="piste"><input type="radio" name="num" value="first" id="PisteOne" checked> <input type="radio" name="num"
+              value="second" id="PisteTwo"> <input type="radio" name="num" value="third" id="PisteThree"></div>
+        </div>
+      </div>
+    </div>
+    <div id="display"></div>
+    <div id="buttons-container">
+
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button id="Del" onclick="del()">Del</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn">+</button>
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">-</button>
+      <button class="btn">.</button>
+      <button class="btn">0</button>
+      <button class="btn">/</button>
+      <button class="btn">x</button>
+      <button id="reset" onclick="reset()">reset</button>
+      <button id="egal" onclick="calc()">=</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
